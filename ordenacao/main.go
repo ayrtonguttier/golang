@@ -24,7 +24,7 @@ func BubbleSort[T Numeravel](numeros []T) {
 	for i := 0; i < len(numeros)-1; i++ {
 
 		if numeros[i].Numero() > numeros[i+1].Numero() {
-			swap[T](numeros, i, i+1)			
+			swap[T](numeros, i, i+1)
 		}
 	}
 }
@@ -40,4 +40,10 @@ func main() {
 	for _, pessoa := range pessoas {
 		fmt.Println(pessoa)
 	}
+	fmt.Println(Contrario(1, 2, func(i, j int) bool { return i == j }))
+
+}
+
+func Contrario(a int, b int, valida func(i, j int) bool) bool {
+	return !valida(a, b)
 }
