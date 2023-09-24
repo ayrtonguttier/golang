@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+type FuncaoSoma func(int, int) int
+
 func main() {
 	funcaoSimples()
 	funcaoComParametros(1, 1)
@@ -30,11 +32,15 @@ func main() {
 		fmt.Println("Outra forma de função anonima ", a)
 	}(20)
 
-	func(){
+	func() {
 		fmt.Println("função clojure acessa membros da função pai ", soma)
 	}()
 
-	
+	funcaoSoma := FuncaoSoma(func(x, z int) int {
+		return x + z
+	})
+
+	fmt.Println("Soma com typed function ", funcaoSoma(2, 2))
 
 }
 
