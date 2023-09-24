@@ -2,10 +2,12 @@ package variavel
 
 import (
 	"fmt"
+
+	"ayrtonguttier.com.br/roadmap/cli"
 )
 
-func RunVariavel(){
-
+func RunVariable(){
+	cli.Print("Variables")
 	//declaração explicita
 	var nome string = "Ayrton"
 	//declaração explicita com inferencia de tipo
