@@ -2,11 +2,14 @@ package functions
 
 import (
 	"fmt"
+
+	"ayrtonguttier.com.br/roadmap/cli"
 )
 
 type FuncaoSoma func(int, int) int
 
 func RunFunctions() {
+	cli.Print("Functions")
 	funcaoSimples()
 	funcaoComParametros(1, 1)
 	retornoPrimeiraFuncao := funcaoComRetorno(2, 2)
@@ -40,8 +43,7 @@ func RunFunctions() {
 		return x + z
 	})
 
-	fmt.Println("Soma com typed function ", funcaoSoma(2, 2))
-
+	fmt.Println("Soma com typed function ", funcaoSoma(2, 2))	
 }
 
 func funcaoSimples() {

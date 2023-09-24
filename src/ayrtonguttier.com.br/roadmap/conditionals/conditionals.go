@@ -3,6 +3,8 @@ package conditionals
 import (
 	"fmt"
 	"time"
+
+	"ayrtonguttier.com.br/roadmap/cli"
 )
 
 func numeros() (int, int) {
@@ -79,11 +81,12 @@ func switchCaseComInicializacao() {
 
 }
 
-func RunConditionals() {
+func RunConditionals() {	
+	cli.Print("Conditionals")
 	normal()
 	comInicializacao()
 	comBooleano()
 	switchCase()
 	switchCaseComVariavel()
-	switchCaseComInicializacao()
+	switchCaseComInicializacao()	
 }

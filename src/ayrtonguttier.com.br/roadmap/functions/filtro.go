@@ -1,10 +1,15 @@
 package functions
 
-import "fmt"
+import (
+	"fmt"
+
+	"ayrtonguttier.com.br/roadmap/cli"
+)
 
 type FiltroInteiro func(i int) bool
 
-func RunFiltro() {	
+func RunFilter() {	
+	cli.Print("Filter")
 	var valores = []int{1, 2, 3, 4, 5}
 
 	fmt.Println("Valores sem filtro: ", valores)
@@ -13,8 +18,7 @@ func RunFiltro() {
 		return i > 2
 	})
 
-	fmt.Print("valores filtrados: ", valoresFiltrados)
-
+	fmt.Println("valores filtrados: ", valoresFiltrados)	
 }
 
 func Filtrar(a []int, regra FiltroInteiro) []int {
