@@ -1,6 +1,8 @@
 package main
 
-import("fmt")
+import (
+	"fmt"
+)
 
 func main(){
 
@@ -12,5 +14,4 @@ func main(){
 	idade:= 29
 	
 	fmt.Println(nome, sobrenome, idade)
-
 }
