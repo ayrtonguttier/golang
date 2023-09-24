@@ -1,4 +1,4 @@
-package main
+package conditionals
 
 import (
 	"fmt"
@@ -79,7 +79,7 @@ func switchCaseComInicializacao() {
 
 }
 
-func main() {
+func RunConditionals() {
 	normal()
 	comInicializacao()
 	comBooleano()

@@ -1,10 +1,10 @@
-package main
+package variavel
 
 import (
 	"fmt"
 )
 
-func main(){
+func RunVariavel(){
 
 	//declaração explicita
 	var nome string = "Ayrton"

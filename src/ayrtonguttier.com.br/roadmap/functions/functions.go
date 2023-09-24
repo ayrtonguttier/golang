@@ -1,4 +1,4 @@
-package main
+package functions
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 
 type FuncaoSoma func(int, int) int
 
-func main() {
+func RunFunctions() {
 	funcaoSimples()
 	funcaoComParametros(1, 1)
 	retornoPrimeiraFuncao := funcaoComRetorno(2, 2)

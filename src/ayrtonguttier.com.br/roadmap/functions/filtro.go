@@ -1,10 +1,10 @@
-package main
+package functions
 
 import "fmt"
 
 type FiltroInteiro func(i int) bool
 
-func main() {	
+func RunFiltro() {	
 	var valores = []int{1, 2, 3, 4, 5}
 
 	fmt.Println("Valores sem filtro: ", valores)
